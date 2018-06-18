@@ -20,8 +20,8 @@ An example is given through cdpr/sdf/caroca.yaml. The sim_cables field leads to 
 * if False then Gazebo will simulate a free-floating platform and subscribe for cdpr::Tensions which are the tensions + unit vector of all cables.
 
 ## TODO
- - [] The improvement with using CTC control algorithm and trajectory generator
- - The control algorithm is CTC which integrates the quadratic programming optimization method in order to get the feasible tension in cables.
+ - [ ] The improvement with using CTC control algorithm and trajectory generator
+ - [ ] The control algorithm is CTC which integrates the quadratic programming optimization method in order to get the feasible tension in cables.
  
 ## Notes
  - The trajectory parameter is defined by `trajectory.yaml` in sdf folder.

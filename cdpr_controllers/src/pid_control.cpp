@@ -5,6 +5,7 @@
 #include <chrono>
 #include <cdpr_controllers/butterworth.h>
 #include <cdpr_controllers/tda.h>
+#include <visp/vpIoTools.h>
 
 using namespace std;
 
@@ -39,7 +40,7 @@ int main(int argc, char ** argv)
     robot.setDesiredPose(0,0,1,0,0,0);
 
     // log path
-    std::string path = "/home/derek/Results/cdpr/";
+    std::string path = "/home/" + vpIoTools::getUserName() + "/Results/cdpr/";
 
     double tauMin, tauMax;
     robot.tensionMinMax(tauMin, tauMax);
